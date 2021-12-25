@@ -36,4 +36,13 @@ public class BookService {
         }
         throw new Exception("Book not present");
     }
+
+    public String deleteBook(String isn) throws Exception{
+        Optional<Book> bookFound = bookRepository.findById(isn);
+        if(bookFound.isPresent()){
+            bookRepository.deleteById(isn);
+            return "Book deleted";
+        }
+        throw new Exception("Book not found");
+    }
 }

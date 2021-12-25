@@ -1,6 +1,7 @@
 type Mutation{
     addBook(book: BookInput): Book
     updateBook(book: BookInput): Book
+    deleteBook(isn: String): String
 }
 
 input BookInput{

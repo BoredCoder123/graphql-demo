@@ -23,4 +23,13 @@ public class BookMutation implements GraphQLMutationResolver {
             throw new Exception("unable to update book");
         }
     }
+
+    public String deleteBook(String isn) throws Exception{
+        try{
+            return bookService.deleteBook(isn);
+        }
+        catch(Exception e){
+            throw new Exception("unable to find book");
+        }
+    }
 }
