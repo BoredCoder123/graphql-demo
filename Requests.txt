@@ -1,0 +1,37 @@
+This is the list of mutations and queries in this project
+
+# {
+#   firstQuery
+# }
+
+# {
+#   getAllBooks{
+#     isn,
+#     name
+#   }
+# }
+
+# {
+#   getBook(isn: "3"){
+#     isn,
+#     name
+#   }
+# }
+
+# mutation{
+#   addBook(book: {isn: "3", name: "test3", author: "test3", publisher: "test3", publishedDate: "test3"}){
+#     isn,
+#     name
+#   }
+# }
+
+# mutation{
+#   updateBook(book: {isn: "4", name: "t", author: "t", publisher: "t", publishedDate: "t"}){
+#     isn,
+#     name
+#   }
+# }
+
+# mutation{
+#   deleteBook(isn: "4")
+# }
