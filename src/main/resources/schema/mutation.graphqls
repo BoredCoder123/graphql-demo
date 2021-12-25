@@ -1,0 +1,12 @@
+type Mutation{
+    addBook(book: BookInput): Book
+    updateBook(book: BookInput): Book
+}
+
+input BookInput{
+    isn: String
+    name: String
+    publisher: String
+    author: String
+    publishedDate: String
+}

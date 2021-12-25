@@ -1,0 +1,13 @@
+type Query{
+    firstQuery: String
+    getAllBooks: [Book]
+    getBook(isn: String): Book
+}
+
+type Book{
+    isn: String
+    name: String
+    publisher: String
+    author: String
+    publishedDate: String
+}
